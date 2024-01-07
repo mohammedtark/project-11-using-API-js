@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app using ※API※</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-dark">
+    <header>
+       <div class="bg-dark">
+        <div class="container text-center pt-3">
+            <h1 class="text-primary">Weather app using ※API※</h1>
+            <h1 class="text-danger">▼</h1>
+        </div>
+       </div>
+    </header>
+    <i class="fa-solid fa-comment position-fixed start-0 top-0 mt-5 ms-2 fs-3" id="message-btn"></i>
+    <i class="fa-solid fa-location-dot position-fixed end-0 top-0 mt-5 me-2 fs-3" id="locate"></i>
+        <section class="container my-5">
+            <input type="text" class="form-control my-3 fw-bold fs-5 rounded-3" id="search"placeholder="Find your location...">
+            <!-- **print location country - location region - location name ** -->
+            <div id="location" class="text-center my-2 text-light fs-3 fw-bold "></div>
+            <!-- **weather today** -->
+             <div class="" id="weatherData">
+               
+             </div>
+        </section>
+        <!-- **************************** -->
+        <section class="container">
+            <div class="table-content">
+                <table class="table text-light text-center">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Max-temp</th>
+                            <th>Min-temp</th>
+                            <th>Condition</th>
+                            <th>Icon</th>
+                            <th>Sun Rise</th>
+                            <th>Sun Set</th>
+                        </tr>
+                    </thead>
+                    <!-- **weather tomorrow and after tomorrow** -->
+                    <tbody id="tbody">
+                         
+                    </tbody>
+                    <!-- ************************ -->
+                </table>
+             </div>
+        </section>
+
+        <section id="message-form" class="position-fixed top-0 bottom-0 start-0 end-0">
+            <i class="fa-solid fa-rectangle-xmark position-absolute top-0 start-0 mt-3 ms-3 fs-1" id="close-form"></i>
+            <div class="container">
+                <form class="position-absolute w-75 top-50 start-50 translate-middle" id="form">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="username" placeholder="Enter your name">
+                      </div>
+                    <div class="mb-3">
+                      <input type="email" class="form-control" id="userEmail" placeholder="Enter your email">
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="message-content" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Your message</label>
+                      </div>
+                    <button type="submit" class="btn btn-primary mt-3">Send</button>
+                  </form>
+            </div>
+        </section>
+    
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

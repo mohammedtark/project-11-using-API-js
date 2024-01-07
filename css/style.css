@@ -1,0 +1,87 @@
+body
+{
+    background:linear-gradient(#00000073, #00000073), url("../img/wallpaperbetter.jpg");
+    background-size: cover;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+}
+#locate
+{
+    cursor: pointer;
+    transition: .3s;
+    color: #0d6efd;
+}
+#locate:hover
+{
+    color: #b9b9b9;
+}
+#message-btn
+{
+    cursor: pointer;
+    transition: .3s;
+    color: #0d6efd;
+}
+#message-btn:hover
+{
+    color: #b9b9b9;
+}
+#weatherData
+{
+    display: flex;
+    justify-content: center;
+}
+.degree h2
+{
+    font-size: 5rem;
+}
+article
+{
+    padding: 10px;
+    border-radius: 10px;
+    background: transparent;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    width: fit-content;
+}
+article img
+{
+    width: 150px;
+}
+.info p
+{
+ font-size: 1rem;
+}
+#location
+{
+    background: transparent;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}
+table
+{
+    background: transparent;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}
+tbody img
+{
+    width: 35px;
+    
+}
+#message-form
+{
+  background-color:#00000096;
+  display: none;
+}
+#close-form
+{
+    cursor: pointer;
+    transition: .3s;
+    color: #0d6efd;
+}
+#close-form:hover
+{
+    color: #eeeff0; 
+}
